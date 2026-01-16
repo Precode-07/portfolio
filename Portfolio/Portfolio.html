@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premsagar | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="welcome-marquee">
+            <div class="marquee-inner">
+                <span>WELCOME TO MY PORTFOLIO • AVAILABLE FOR NEW PROJECTS • LET'S BUILD SOMETHING GREAT • </span>
+                <span>WELCOME TO MY PORTFOLIO • AVAILABLE FOR NEW PROJECTS • LET'S BUILD SOMETHING GREAT • </span>
+            </div>
+        </div>
+            <h1 class="reveal-text">Premsagar <span>Sanjaykumar</span> Chauhan</h1>
+            <p class="fade-in">Hey there! I'm Prem, a curious developer who loves solving problems — whether it's debugging backend systems, exploring AI/ML, or building automation tools. I enjoy turning ideas into projects that are practical, efficient, and easy to use.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+    <h2 class="fade-up">Technical Skills</h2>
+    <div class="skills-container fade-up">
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Backend & AI</h3>
+            <div class="skill-list">
+                <span>Python</span>
+                <span>Node.js</span>
+                <span>SQL</span>
+                <span>AI/ML</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-list">
+                <span>Git</span>
+                <span>Docker</span>
+                <span>Automation</span>
+                <span>Linux</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="projects">
+        <h2>Selected Projects</h2>
+        <div class="grid">
+            <div class="card fade-up">
+                <div class="card-img">
+                    <img src="images\Project1.png" alt="Movie Recommendation System">
+                </div>
+                <h3>Movie Recommender</h3>
+                <p>A Movie Recommendation System built with PHP, MySQL, and Bootstrap that allows users to: Browse a list of movies titles, and genre badges Get personalized recommendations based on the last viewed genre.</p>
+            </div>
+            
+            <div class="card fade-up">
+                <div class="card-img">
+                    <img src="images/Project3.jpg" alt="Dashboard">
+                </div>
+                <h3>E-mail Marketing Dashboard</h3>
+                <p>A data analytics study exploring how personalization, automation, and AI are transforming email marketing. It highlights key trends in engagement, privacy compliance, and campaign performance, </p>
+            </div>
+
+            <div class="card fade-up">
+                <div class="card-img">
+                    <img src="images/Project3.webp" alt="Smart Study Planner">
+                </div>
+                <h3>Smart Study Planner App</h3>
+                <p>A powerful tool for students to manage notes effortlessly and automatically generate MCQs and long-answer questions. It helps in organizing study material, practicing exams, and boosting preparation with minimal effort.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+    <h2 class="fade-up">Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="date">Jan 2024 - Present</span>
+                <h3>Full Stack Developer</h3>
+                <span class="company">Zodiac Techlance</span>
+                <p>Developing scalable web applications, optimizing database performance, and implementing AI-driven features for client projects.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="date">Dec 2024 - Jan 2025</span>
+                <h3> Data Analyst</h3>
+                <span class="company">Edunet Foundation</span>
+                <p>Built Interactive Dashboard using Excel and PowerBI with dataset in which first we perform data cleaning , data processing using DAX formula and than create a dashboard using graphs and maps that best represent the data .</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="resume-section fade-up">
+    <div class="resume-container">
+        <h2>Ready to work together?</h2>
+        <p>You can view my full professional background and technical expertise in my resume.</p>
+        <div class="resume-actions">
+            <a href="images/resume.pdf" target="_blank" class="btn outline">View Resume</a>
+            <a href="images/resume.pdf" download class="btn">Download PDF</a>
+        </div>
+    </div>
+</section>
+
+    <footer id="contact">
+        <h2>Let's connect.</h2>
+        <p>+91 6389292036 / 8253038332</p>
+        <p>Email: prem6150100@gmail.com</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/premsagarsanjaykumarchauhan/">LinkedIn</a> / <a href="https://github.com/Precode-07">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-now');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up, .fade-in, .reveal-text').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
